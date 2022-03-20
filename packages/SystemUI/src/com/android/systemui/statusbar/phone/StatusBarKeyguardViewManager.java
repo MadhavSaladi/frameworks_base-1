@@ -116,7 +116,6 @@ public class StatusBarKeyguardViewManager implements RemoteInputController.Callb
     private final UnlockedScreenOffAnimationController mUnlockedScreenOffAnimationController;
     private final KeyguardMessageAreaController.Factory mKeyguardMessageAreaFactory;
     private KeyguardMessageAreaController mKeyguardMessageAreaController;
-    private final Lazy<ShadeController> mShadeController;
     private boolean mBouncerVisible = false;
     private final BouncerExpansionCallback mExpansionCallback = new BouncerExpansionCallback() {
         @Override
@@ -272,7 +271,6 @@ public class StatusBarKeyguardViewManager implements RemoteInputController.Callb
             WakefulnessLifecycle wakefulnessLifecycle,
             UnlockedScreenOffAnimationController unlockedScreenOffAnimationController,
             KeyguardMessageAreaController.Factory keyguardMessageAreaFactory,
-            Lazy<ShadeController> shadeController,
             @Main Handler handler,
             @Main Handler faceRecognizingHandler) {
         mContext = context;
